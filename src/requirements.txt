@@ -1,0 +1,11 @@
+flask
+flask-cors
+torch==2.0.0
+transformers==4.29.2
+numpy
+scipy
+scikit-learn
+seaborn
+matplotlib
+tqdm
+pytorch-lightning==1.5.3
