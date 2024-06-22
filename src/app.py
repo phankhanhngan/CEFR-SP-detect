@@ -10,15 +10,15 @@ app = Flask(__name__)
 
 def map_to_cefr(score: float) -> str:
     """Map a numeric score to a CEFR level."""
-    if 0 <= score < 1:
+    if 0.0 <= score < 0.5:
         return 'A1'
-    elif 1 <= score < 2:
+    elif 0.5 <= score < 1.5:
         return 'A2'
-    elif 2 <= score < 3:
+    elif 1.5 <= score < 2.5:
         return 'B1'
-    elif 3 <= score < 4:
+    elif 2.5 <= score < 3.5:
         return 'B2'
-    elif 4 <= score < 5:
+    elif 3.5 <= score < 4.5:
         return 'C1'
     else:
         return 'C2'
